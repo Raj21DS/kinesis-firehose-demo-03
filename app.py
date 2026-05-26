@@ -24,6 +24,13 @@ def get_stream_url(youtube_urls):
   except Exception as e:
     st.error(f"Error loading stram: {e}")
     return None
+
+# Grid setup
+col1,col2 = st.columns(2)
+
+# stream 1
+with col1:
+  st.subheader("Live stream 1")
       
   
   
