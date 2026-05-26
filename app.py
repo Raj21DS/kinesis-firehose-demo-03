@@ -51,7 +51,7 @@ col3,col4 = st.columns(2)
 
 # stream 3
 with col3:
-  st.subheader("Live stream 1")
+  st.subheader("Live stream 3")
   stream_url = get_stream_url(youtube_urls[2])
   if stream_url:
     st.video(stream_url)
@@ -60,7 +60,7 @@ with col3:
 
 # stream 4
 with col4:
-  st.subheader("Live stream 1")
+  st.subheader("Live stream 4")
   stream_url = get_stream_url(youtube_urls[3])
   if stream_url:
     st.video(stream_url)
