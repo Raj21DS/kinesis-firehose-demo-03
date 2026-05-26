@@ -13,7 +13,7 @@ youtube_urls =[
 
 # Define a new function
 def get_stream_url(youtube_urls):
-  try
+  try:
   # return the array of video quality of streams
     streams = streamlink.streams(youtube_urls)
 
