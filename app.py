@@ -36,6 +36,15 @@ with col1:
     st.video(stream_url)
   else:
     st.warning("Unable to load Stream")
+
+# stream 2
+with col2:
+  st.subheader("Live stream 1")
+  stream_url = get_stream_url(youtube_urls[1])
+  if stream_url:
+    st.video(stream_url)
+  else:
+    st.warning("Unable to load Stream")
       
   
   
