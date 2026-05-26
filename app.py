@@ -45,6 +45,27 @@ with col2:
     st.video(stream_url)
   else:
     st.warning("Unable to load Stream")
+
+# Grid setup
+col3,col4 = st.columns(2)
+
+# stream 3
+with col3:
+  st.subheader("Live stream 1")
+  stream_url = get_stream_url(youtube_urls[2])
+  if stream_url:
+    st.video(stream_url)
+  else:
+    st.warning("Unable to load Stream")
+
+# stream 4
+with col4:
+  st.subheader("Live stream 1")
+  stream_url = get_stream_url(youtube_urls[3])
+  if stream_url:
+    st.video(stream_url)
+  else:
+    st.warning("Unable to load Stream")
       
   
   
