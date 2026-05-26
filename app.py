@@ -34,6 +34,8 @@ with col1:
   stream_url = get_stream_url(youtube_urls[0])
   if stream_url:
     st.video(stream_url)
+  else:
+    st.warning("Unable to load Stream")
       
   
   
