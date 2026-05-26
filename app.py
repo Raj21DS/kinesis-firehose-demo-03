@@ -31,6 +31,9 @@ col1,col2 = st.columns(2)
 # stream 1
 with col1:
   st.subheader("Live stream 1")
+  stream_url = get_stream_url(youtube_urls[0])
+  if stream_url:
+    st.video(stream_url)
       
   
   
