@@ -19,6 +19,7 @@ def get_stream_url(youtube_urls):
 
     # check for best video quality
     if 'best' in streams:
+      st.write(best)
       return streams['best'].url
     return None
   except Exception as e:
