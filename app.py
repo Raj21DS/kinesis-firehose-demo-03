@@ -16,7 +16,7 @@ def get_stream_url(youtube_urls):
   try:
   # return the array of video quality of streams
     streams = streamlink.streams(youtube_urls)
-    st.write(f"streams: {streams}")
+    st.write("streams:", streams)
 
     # check for best video quality
     if 'best' in streams:
