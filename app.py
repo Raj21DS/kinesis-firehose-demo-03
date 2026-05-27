@@ -21,6 +21,7 @@ def get_stream_url(youtube_urls):
     if 'best' in streams:
       st.write(best)
       return streams['best'].url
+    st.write("No 'best' Stream available")
     return None
   except Exception as e:
     st.error(f"Error loading stram: {e}")
